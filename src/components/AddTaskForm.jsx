@@ -25,11 +25,11 @@ const AddTaskForm = ({ tasks, setTasks ,handleSubmit, task, setTask, day, setDay
     <div className=''>
       <form onSubmit={handleSubmit}>
         <div className='addTaskDiv d-flex flex-column col display-5'>
-          <label className='' htmlFor=''>
+          <label className='fw-bolder' htmlFor=''>
             Task
           </label>
           <input
-            className='addTaskInputDiv col-md-8 col-lg-10 col-sm-6 col-6 display-6 border border-2 border-danger text-bg-primary'
+            className='addTaskInputDiv col-md-8 col-lg-10 col-sm-6 col-6 display-6 border border-2 border-danger text-bg-info mt-1 text-light p-2 rounded-4'
             type='text'
             name='tasks'
             id='tasks'
@@ -39,10 +39,10 @@ const AddTaskForm = ({ tasks, setTasks ,handleSubmit, task, setTask, day, setDay
             required
           />
         </div>
-        <div className='addTaskDayDiv d-flex flex-column col-md-8 col-lg-10 col-sm-6 col-6 mt-3 display-6 '>
+        <div className='addTaskDayDiv fw-normal d-flex flex-column col-md-8 col-lg-10 col-sm-6 col-6 mt-1 display-6'>
           <label htmlFor=''>Day & Time</label>
           <input
-            className='border border-2 border-danger text-bg-primary'
+            className='border border-2 border-danger text-bg-primary mt-1 p-2 rounded-4'
             type='datetime-local'
             name='day'
             id='day'
@@ -51,8 +51,11 @@ const AddTaskForm = ({ tasks, setTasks ,handleSubmit, task, setTask, day, setDay
             required
           />
         </div>
-        <div className='mt-5'>
-          <button type='submit'>Save Task</button>
+        <div className='mt-3'>
+          <button className='buttonDiv' type='submit'>
+            Save Task
+          </button>
+          
         </div>
       </form>
     </div>
