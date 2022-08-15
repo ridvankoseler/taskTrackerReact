@@ -1,23 +1,25 @@
 import React from 'react'
-import { FaTrashAlt } from "react-icons/fa";
 
-const ShowTask = ({tasks}) => {
-    
+import SingleTask from './SingleTask';
+
+const ShowTask = ({tasks ,setTasks ,handleDelete }) => {
+
+    console.log(tasks);
     
   return (
-    <div>
-        <ul>
+    <div className=''>
+        <ul className=''>
             { tasks.map((item)=>{
+             
                 return (
-                  <li>
-                    <p>{item.task}</p>
-                    <p>{item.day}</p>
-                    <span><FaTrashAlt/></span>
+                  <li className='list-unstyled'>
+                    <SingleTask key={item.id} item={item} handleDelete={handleDelete} />
                   </li>
                 );
             })
                 }
         </ul>
+        
     </div>
   )
 }

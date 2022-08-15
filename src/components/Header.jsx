@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AddTaskForm from "./AddTaskForm";
 
-const Header = ({ tasks, setTasks }) => {
+const Header = ({ tasks, setTasks ,handleSubmit ,task, setTask,day, setDay}) => {
   const [show, setShow] = useState(true);
   const [btnStyle, setBtnStyle] = useState({ name: "Show", bgColor: "coral" });
 
@@ -30,7 +30,15 @@ const Header = ({ tasks, setTasks }) => {
         {btnStyle.name}
       </button>
       {show ? (
-        <AddTaskForm tasks={tasks} setTasks={setTasks} />
+        <AddTaskForm
+          tasks={tasks}
+          setTasks={setTasks}
+          task={task}
+          setTask={setTask}
+          day={day}
+          setDay={setDay}
+          handleSubmit={handleSubmit}
+        />
       ) : (
         <h5>No Tasks To Show</h5>
       )}
