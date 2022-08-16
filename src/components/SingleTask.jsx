@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
 const SingleTask = ({ item, handleDelete }) => {
-  const [lineThrough, setLineThrough] = useState(false);
+  const [lineThrough, setLineThrough] = useState(true);
   return (
     <div
       className={lineThrough ? "task" : "line"}

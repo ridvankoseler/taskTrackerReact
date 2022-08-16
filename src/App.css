@@ -70,11 +70,6 @@ body{
     cursor: pointer;
 }
 
-
-
-    
-
-
 .singleTaskDiv{
     max-width:400px;
     
@@ -82,10 +77,6 @@ body{
 .addTaskDiv{
 border-radius: 10px;
 }
-    
-
-
-
 
 .addTaskInputDiv{
     margin: auto;
