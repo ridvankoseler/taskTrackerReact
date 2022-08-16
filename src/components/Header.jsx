@@ -1,14 +1,22 @@
 import React, { useState } from "react";
 import AddTaskForm from "./AddTaskForm";
 
-const Header = ({ tasks, setTasks ,handleSubmit ,task, setTask,day, setDay}) => {
+const Header = ({
+  tasks,
+  setTasks,
+  handleSubmit,
+  task,
+  setTask,
+  day,
+  setDay,
+}) => {
   const [show, setShow] = useState(true);
   const [btnStyle, setBtnStyle] = useState({
     name: "Close Add Task Bar",
     bgColor: "gray",
     padding: "8px",
     rounded: "20px",
-    textColor:'white'
+    textColor: "white",
   });
 
   const handleClick = () => {
@@ -56,7 +64,9 @@ const Header = ({ tasks, setTasks ,handleSubmit ,task, setTask,day, setDay}) => 
           handleSubmit={handleSubmit}
         />
       ) : (
-        <h5 className="mt-2 text-danger">You can't enter Task now. Please click the button to enter.</h5>
+        <h5 className='mt-2 text-danger'>
+          You can't enter Task now. Please click the button to enter.
+        </h5>
       )}
     </div>
   );

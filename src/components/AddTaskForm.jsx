@@ -1,11 +1,16 @@
 import React from "react";
 
-const AddTaskForm = ({ tasks, setTasks ,handleSubmit, task, setTask, day, setDay }) => {
+const AddTaskForm = ({
+  tasks,
+  setTasks,
+  handleSubmit,
+  task,
+  setTask,
+  day,
+  setDay,
+}) => {
   // const [task, setTask] = useState();
   // const [day, setDay] = useState();
-
-  
-  
 
   // const handleSubmit = (e) => {
   //   e.preventDefault();
@@ -20,7 +25,7 @@ const AddTaskForm = ({ tasks, setTasks ,handleSubmit, task, setTask, day, setDay
   //   tasks = tasks.fiter((item) => (item.id = !id));
   //   setTasks("");
   // };
-  console.log(tasks)
+  console.log(tasks);
   return (
     <div className=''>
       <form onSubmit={handleSubmit}>
@@ -55,7 +60,6 @@ const AddTaskForm = ({ tasks, setTasks ,handleSubmit, task, setTask, day, setDay
           <button className='buttonDiv' type='submit'>
             Save Task
           </button>
-          
         </div>
       </form>
     </div>
