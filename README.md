@@ -4,10 +4,17 @@ https://task-tracker-react-ochre.vercel.app/
 
 <br>
 
+👉 Firebase Authentication
 👉 UseState <br>
 👉 UseEffect <br>
+👉 UseContext <br>
+👉 Axios<br>
+👉 React Router Dom <br>
 👉 Props/Components <br>
 👉 Form<br>
-👉 Local Storage<br>
+👉 UseNavigate<br>
+👉 Toastify<br>
+👉 Bootstrap5 <br>
 
-![AnimationTaskTracker.gif](https://github.com/ridvankoseler/taskTrackerReact/blob/3542a8abccad404d84322d3e4ed280ae0ba2ce6e/AnimationTaskTracker.gif)
+
+![AnimationMovieApp6.gif](https://github.com/ridvankoseler/MovieAppReact/blob/076902a80897683912d06a4f5e64defebeb9ac1c/AnimationMovieApp6.gif)
